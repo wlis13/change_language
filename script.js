@@ -17,7 +17,7 @@ import { traductions } from "./language.js";
 //   }
 // });
 
-languageSelect.addEventListener('click', function({target}) {
+languageSelect.addEventListener('change', function({target}) {
   const translatableElements = document.querySelectorAll('[data-translate]');
   console.log(target.value)
   translatableElements.forEach(element => {
